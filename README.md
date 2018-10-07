@@ -10,3 +10,14 @@ Important:
 ===============
 only give the password to people you trust.
 
+
+Changelog:
+===============
+
+v1.0.1
+===============
+-security update (added escapeshellarg())
+
+v1.0.0
+===============
+-Initial release
