@@ -9,9 +9,9 @@ if(isset($_GET["file"])) {
 if($filename == "") {
     die("error");
 }
-$id = exec(YOUTUBEDLPATH . " --get-id " . $filename);
+$id = exec(YOUTUBEDLPATH . " --get-id " . escapeshellarg($filename));
 $file = "temp/" . $id . ".mp3";
-$videoname = exec(YOUTUBEDLPATH . " -e " . $filename);
+$videoname = exec(YOUTUBEDLPATH . " -e " . escapeshellarg($filename));
 if (file_exists($file)) {
     header('Content-Description: File Transfer');
     header('Content-Type: application/octet-stream');

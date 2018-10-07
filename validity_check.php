@@ -8,7 +8,7 @@ if($password === md5(masterpassword)) {
 } else {
     die("error");
 }
-$checkifurlvalid = exec(YOUTUBEDLPATH . ' -j ' . $url);
+$checkifurlvalid = exec(YOUTUBEDLPATH . ' -j ' . escapeshellarg($url));
 if($checkifurlvalid != null) {
     print("pass");
 } else {
