@@ -9,6 +9,7 @@ please check the settings.php
 Important:
 ===============
 only give the password to people you trust.
+this script is not good for high traffic
 
 
 Changelog:
