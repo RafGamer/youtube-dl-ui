@@ -8,7 +8,7 @@ please check the settings.php
 
 Important:
 ===============
-only give the password to people you trust.
+Only give the password to people you trust.
 The website on which the script is running should not be made public, because the script is not designed and not secure enough to be use with high traffic.
 
 
