@@ -9,7 +9,7 @@ please check the settings.php
 Important:
 ===============
 only give the password to people you trust.
-this script is not good for high traffic
+The website on which the script is running should not be made public, because the script is not designed and not secure enough to be use with high traffic.
 
 
 Changelog:
