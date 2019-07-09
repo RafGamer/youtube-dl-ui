@@ -12,10 +12,16 @@ if($filename == "") {
 $id = exec(YOUTUBEDLPATH . " --get-id " . escapeshellarg($filename));
 $file = "temp/" . $id . ".mp3";
 $videoname = exec(YOUTUBEDLPATH . " -e " . escapeshellarg($filename));
+
+//replaces illegal windows chars
+$illegalchars = array("/", "\\");
+$illegalcharsrplc = array(" ", " ");
+$videonamedl = str_replace($illegalchars, $illegalcharsrplc, $videoname);
+
 if (file_exists($file)) {
     header('Content-Description: File Transfer');
     header('Content-Type: application/octet-stream');
-    header('Content-Disposition: attachment; filename="'.basename($videoname).'.mp3"');
+    header('Content-Disposition: attachment; filename="'.basename($videonamedl).'.mp3"');
     header('Expires: 0');
     header('Cache-Control: must-revalidate');
     header('Pragma: public');
