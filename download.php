@@ -14,8 +14,8 @@ $file = "temp/" . $id . ".mp3";
 $videoname = exec(YOUTUBEDLPATH . " -e " . escapeshellarg($filename));
 
 //replaces illegal windows chars
-$illegalchars = array("/", "\\");
-$illegalcharsrplc = array(" ", " ");
+$illegalchars = array("/", "\\", ":", "*", "?", '"', "<", ">", "|");
+$illegalcharsrplc = array(" ", " ", " ", " ", " ", " ", " ", " ", " ");
 $videonamedl = str_replace($illegalchars, $illegalcharsrplc, $videoname);
 
 if (file_exists($file)) {
