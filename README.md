@@ -17,7 +17,7 @@ Changelog:
 
 v1.0.2
 ===============
--bug fixed(filenames were buggy when downloading on windows)
+-bug fixed (filenames were buggy when downloading on windows)
 
 v1.0.1
 ===============
