@@ -15,6 +15,10 @@ The website on which the script is running should not be made public, because th
 Changelog:
 ===============
 
+v1.0.3
+===============
+-shortened array(made code clearer)
+
 v1.0.2
 ===============
 -bug fixed (filenames were buggy when downloading on windows)
