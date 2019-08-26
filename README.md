@@ -17,7 +17,7 @@ Changelog:
 
 v1.0.3
 ===============
--shortened array(made code clearer)
+-shortened array (made code clearer)
 
 v1.0.2
 ===============
